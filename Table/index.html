@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        td => table data cells
+        tr => table row cells
+        th => table header cells 
+        thead => table header
+        tbody => table body
+        tfoot => table footer
+        caption => title of table
+        colspan => merge column 
+        rowspan => merge row 
+     -->
+
+    <table style="width: 100%">
+        <caption>
+            Table Information
+        </caption>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    <hr />
+    <table style="width: 100%">
+        <caption>
+            Table Information
+        </caption>
+        <thead>
+            <tr>
+                <td>Company</td>
+                <td>Contact</td>
+                <td>Country</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Number Company = ....</td>
+                <td>Number Contact = ....</td>
+                <td>Number Country = ....</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr />
+    <table style="width: 100%">
+        <caption>
+            Table Information
+        </caption>
+        <tfoot>
+            <tr>
+                <td>Number Company = ....</td>
+                <td>Number Contact = ....</td>
+                <td>Number Country = ....</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <td>Company</td>
+                <td>Contact</td>
+                <td>Country</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr />
+    <table style="width: 100%">
+        <caption>
+            Table Information
+        </caption>
+        <thead>
+            <tr>
+                <td rowspan="2">Date</td>
+                <td rowspan="2">Particulars</td>
+                <td colspan="3">Amount</td>
+            </tr>
+            <tr>
+                <td>Debit</td>
+                <td>Credit</td>
+                <td>Amount</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1/1/18</td>
+                <td>Beginning Balance</td>
+                <td>100.00</td>
+                <td></td>
+                <td>100.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>300.00</td>
+                <td>20.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr />
+    <table style="width: 100%">
+        <caption>
+            Table Information
+        </caption>
+        <thead>
+            <tr>
+                <td>Item/Desc</td>
+                <td>Qty.</td>
+                <td>@</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Box</td>
+                <td>100</td>
+                <td>1.15</td>
+                <td>115.00</td>
+            </tr>
+            <tr>
+                <td>Case</td>
+                <td>10</td>
+                <td>45.99</td>
+                <td>459.90</td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    Wastepaper <br /> Baskets
+                </td>
+                <td rowspan="2">2</td>
+                <td rowspan="2">17.99</td>
+                <td rowspan="2">35.98</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Subtotal</td>
+                <td>610.88</td>
+            </tr>
+            <tr>
+                <td colspan="2">Tax</td>
+                <td>7%</td>
+                <td>42.76</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>653.64</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr />
+    <table style="width: 100%">
+        <caption>
+            Table Information
+        </caption>
+        <thead>
+            <tr>
+                <td>Header</td>
+                <td>Header</td>
+                <td>Header</td>
+                <td>Header</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="6">You can span down</td>
+                <td colspan="3">You can span across</td>
+            </tr>
+            <tr>
+                <td colspan="2">It`s lika a puzzla</td>
+                <td rowspan="4">
+                    Over <br /> here
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">This Way</td>
+                <td>That way</td>
+            </tr>
+            <tr>
+                <td rowspan="1">Where am I ?</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr></tr>
+        </tfoot>
+    </table>
+    <hr />
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description For Web Page" />
+    <meta name="author" content="Youssef Baba" />
+    <title>Page List</title>
+</head>
+
+<body>
+    <h1>Test Of List</h1>
+    <!-- Unordered List => ul  -->
+    <h2>An Unordered HTML List</h2>
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <!-- Ordered List => ol  -->
+    <h2>An Ordered HTML List</h2>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ol>
+    <!-- Description List => dl  -->
+    <h2>An Description HTML List</h2>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>
+            Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. From the coffee fruit, the seeds are separated to produce a stable, raw product: unroasted green coffee. The seeds are then roasted, a process
+            which transforms them into a consumable product: roasted coffee, which is ground into fine particles that are typically steeped in hot water before being filtered out, producing a cup of coffee.
+        </dd>
+        <dt>Milk</dt>
+        <dd>
+            is a nutrient-rich liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals, including breastfed human infants before they are able to digest solid food.[1] Early-lactation milk is called colostrum,
+            which contains antibodies that strengthen the immune system and thus reduces the risk of many diseases. It holds many other nutrients,[2] including protein and lactose. Interspecies consumption of milk is not uncommon - many human beings consume
+            the milk of other mammals.[3][4]
+        </dd>
+        <dt>Tea</dt>
+        <dd>
+            Tea is an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves of Camellia sinensis, an evergreen shrub native to China and other East Asian countries.[3] After water, it is the most widely consumed drink in the world.[4]
+            There are many different types of tea; some, like Chinese greens and Darjeeling, have a cooling, slightly bitter, and astringent flavour,[5] while others have vastly different profiles that include sweet, nutty, floral, or grassy notes. Tea
+            has a stimulating effect in humans primarily due to its caffeine content.[6]
+        </dd>
+    </dl>
+    <hr />
+    <!-- Unordered HTML List - Choose List Item Marker  -->
+    <h2>Unordered HTML List - Choose List Item Marker</h2>
+    <ol style="list-style-type: square">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ol>
+    <!-- A Nested List  -->
+    <h2>A Nested List</h2>
+    <ol style="list-style-type: none">
+        <li>Coffee</li>
+        <li>
+            Tea
+            <ul>
+                <li>Black Tea</li>
+                <li>Green Tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ol>
+    <h2>List Example</h2>
+    <ol style="list-style-type: upper-roman">
+        <li>
+            List Item 1
+            <ol style="list-style-type: lower-latin">
+                <li>Nested Item 1.1</li>
+                <li>Nested Item 1.2</li>
+            </ol>
+        </li>
+        <li>
+            List Item 2
+            <ol style="list-style-type: decimal">
+                <li>Nested Item 2.1</li>
+                <li>
+                    Nested Item 2.2
+                    <ul style="list-style-type: circle">
+                        <li>Nested Item 2.2.1</li>
+                        <li>
+                            Nested Item 2.2.2
+                            <ul>
+                                <li>Nested Item 2.2.2.1</li>
+                                <li>Nested Item 2.2.2.2</li>
+                            </ul>
+                        </li>
+                        <li>Nested Item 2.2.3</li>
+                    </ul>
+                </li>
+                <li>Nested Item 2.3</li>
+            </ol>
+        </li>
+        <li>
+            List Item 3
+            <ul style="list-style-type: disc">
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.2</li>
+                <li>Nested Item 3.3</li>
+            </ul>
+        </li>
+    </ol>
+    <!--  start => start from position and Available only for number decimal and romman -->
+    <h2>
+        start : start from position and Available only for number decimal and romman
+    </h2>
+    <ol type="1" start="12">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I" start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr />
+    <!-- reversed => reverse the ordering  -->
+    <h2>reversed => reverse the ordering</h2>
+    <ol type="A" reversed>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+    <ol type="1" reversed>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+    <!-- value => value in item  list and available only for number decimal   -->
+    <h2>value => value in item list and available only for number decimal</h2>
+    <ol>
+        <li value="20">Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+    <!-- Nested Unordered List -->
+    <ul>
+        <li>
+            item 1
+            <ul>
+                <li>
+                    item 2
+                    <ul>
+                        <li>item 2.1</li>
+                        <li>
+                            item 2.2
+                            <ul>
+                                <li>item 2.2.1</li>
+                                <li>item 2.2.2</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    item 3
+                    <ul>
+                        <li>item 3.1</li>
+                        <li>item 3.2</li>
+                        <li>item 3.3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <hr />
+    <!-- Nested ordered List -->
+    <ol type="I">
+        <li>
+            Background Skills
+            <ol type="A">
+                <li>Unix Commands</li>
+                <li>Vim Text Editor</li>
+            </ol>
+        </li>
+        <li>
+            HTML
+            <ol type="A">
+                <li>Minimal Page</li>
+                <li>Headings</li>
+                <li>Tags</li>
+                <li>
+                    Lists
+                    <ol type="i">
+                        <li>Unordered</li>
+                        <li>Ordered</li>
+                        <li>Definition</li>
+                        <li>Nested</li>
+                    </ol>
+                </li>
+                <li>
+                    Links
+                    <ol type="i">
+                        <li>Relative</li>
+                        <li>Absolute</li>
+                    </ol>
+                </li>
+                <li>Images</li>
+            </ol>
+        </li>
+        <li>
+            CSS
+            <ol type="A">
+                <li>Atanomy</li>
+                <li>
+                    Basics Selectors
+                    <ol type="i">
+                        <li>Element</li>
+                        <li>Class</li>
+                        <li>Id</li>
+                        <li>Group</li>
+                    </ol>
+                </li>
+                <li>The Dom</li>
+                <li>Advanced Selectors</li>
+                <li>Box Model</li>
+            </ol>
+        </li>
+        <li>
+            Programming
+            <ol type="A">
+                <li>Python</li>
+                <li>Javascript</li>
+            </ol>
+        </li>
+        <li>
+            Database
+            <ol type="A">
+                <li>Flat File</li>
+                <li>Relational</li>
+            </ol>
+        </li>
+    </ol>
+    <hr />
+    <dl>
+        <dt>Coffee</dt>
+        <dd>
+            Description :Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, explicabo.
+        </dd>
+        <dt>Milk</dt>
+        <dd>
+            Description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, enim!
+        </dd>
+        <dt>Tea</dt>
+        <dd>
+            Description : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, voluptatem.
+        </dd>
+    </dl>
+</body>
+
+</html>
