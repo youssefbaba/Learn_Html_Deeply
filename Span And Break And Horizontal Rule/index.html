@@ -8,8 +8,79 @@
     <meta name="description" content="Description  For Application" />
     <meta name="author" content="Youssef Baba" />
     <title>Book Store</title>
+    <style>
+        .blue {
+            color: blue;
+            font-weight: bold;
+        }
+        
+        .dark_green {
+            color: green;
+            font-weight: bold;
+        }
+        
+        #book {
+            color: red;
+        }
+    </style>
 </head>
 
-<body></body>
+<body>
+    <h1>Book Store</h1>
+    <p>This Is My Book Store</p>
+    <!--  span is a inline element  -->
+    <span>Item 1</span>
+    <span>Item 2</span>
+    <span>Item 3</span>
+    <!-- 
+        - The <span> element is an inline container used to mark up a part of a text,
+            The <span> element has no required attributes, but style, class and id are common.
+            When used together with CSS, the <span> element can be used to style parts of the text .
+        -Test For span    
+    -->
+    <p>This Is My <span id="book">Book</span>Store</p>
+    <p>
+        My mother has <span class="blue">blue </span>eyes and my father has
+        <span class="dark_green">dark green</span> eyes .
+    </p>
+    <!-- 
+        - The <br> tag inserts a single line break.
+        - Use the <br> tag to insert line breaks,without starting a new paragraph ,  not to add space between paragraphs.
+        -Test For br .
+     -->
+    <p>This Is Second Paaragraph , <br />Test <br />Test Again</p>
+    <p>
+        To force<br />line breaks<br /> in a text ,<br />use the br<br /> element.
+    </p>
+    <p>This is<br />a paragraph<br />with line breaks.</p>
+    <p>
+        Be not afraid of greatness.<br /> Some are born great,<br /> some achieve greatness,<br /> and others have greatness thrust upon them.
+    </p>
+
+    <p><em>-William Shakespeare</em></p>
+
+    <!-- 
+        - hr => horizontal rule + block element  
+        - The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.
+        -Test hr 
+     -->
+    <h1>The Main Languages of the Web</h1>
+
+    <p>
+        HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.
+    </p>
+
+    <hr />
+
+    <p>
+        CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.
+    </p>
+
+    <hr />
+
+    <p>
+        JavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.
+    </p>
+</body>
 
 </html>
