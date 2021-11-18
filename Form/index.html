@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description For My Application ">
+    <meta name="author" content="Youssef Baba">
+    <title>Test Of Form </title>
+</head>
+
+<body>
+    <h2>Input Text , Input Email , Input Radio , Input Checkbox , Input Submit , Input Reset </h2>
+    <!-- <form action="" method="post" target="_blank" enctype="multipart/form-data"> -->
+    <fieldset>
+        <legend>Form : </legend>
+        <form action="#" method="post">
+            <div>
+                <label for="first_name">First Name : </label><br>
+                <input type="text" placeholder="youssef" id="first_name" name="first_name" value="youssef" disabled>
+            </div>
+            <hr>
+            <div>
+                <label for="last_name">Last Name ; </label> <br>
+                <input type="text" id="last_name" name="last_name" placeholder="baba" value="baba" readonly>
+            </div>
+            <hr>
+            <div>
+                <label for="email">Email : </label><br>
+                <input type="email" name="email" id="email" placeholder="email">
+            </div>
+            <hr>
+            <div>
+                <input type="radio" name="fav_language" id="php" value="php">
+                <label for="php">PHP</label>
+            </div>
+            <div>
+                <input type="radio" name="fav_language" id="python" value="python">
+                <label for="python">PYTHON</label>
+            </div>
+            <div>
+                <input type="radio" name="fav_language" id="java" value="java" checked>
+                <label for="java">JAVA</label>
+            </div>
+            <hr>
+            <div>
+                <input type="checkbox" name="car" id="opel" value="opel">
+                <label for="opel">OPEL</label>
+            </div>
+            <div>
+                <input type="checkbox" name="car" id="renault" value="renault" checked>
+                <label for="renault ">RENAULT</label>
+            </div>
+            <div>
+                <input type="checkbox" name="car" id="dacia" value="dacia">
+                <label for="dacia">DACIA</label>
+            </div>
+            <hr>
+            <!-- <div>
+            <input type="file " name="avatar ">
+        </div> -->
+            <div>
+                <label for="cars">Chhose a car : </label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat" selected>Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <hr> <label for="text">Click Here</label>
+            <textarea name="texterea_1" id="text" cols="30" rows="10" placeholder="Wrtie Anything Here "></textarea>
+            <hr>
+            <div>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </div>
+            <hr>
+            <div>
+                <label for="color">Select your favorite color : </label>
+                <input type="color" name="color" id="color" value="#33FF4F">
+            </div>
+            <hr>
+            <div>
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday" value="2017-06-01">
+            </div>
+            <hr>
+            <div>
+                <label for="datemax">Enter a date before 1980-01-01:</label>
+                <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            </div>
+            <hr>
+            <div>
+                <label for="datemin">Enter a date after 2000-01-01:</label>
+                <input type="date" id="datemin" name="datemin" min="2000-01-02">
+            </div>
+            <hr>
+            <div>
+                <label for="meeting-time">Choose a time for your appointment:</label>
+
+                <input type="datetime-local" id="meeting-time" name="meeting-time">
+            </div>
+            <hr>
+            <div>
+                <label for="bdaymonth">Birthday (month and year):</label>
+                <input type="month" id="bdaymonth" name="bdaymonth" value="2017-06">
+            </div>
+            <hr>
+            <div>
+                <label for="upload">Upload</label>
+                <input type="file" name="upload" id="upload">
+            </div>
+            <hr>
+            <div>
+                <label for="quantity">Quantity</label>
+                <input type="number" name="quantity" id="quantity" max="100" min="0" step="10" value="30">
+            </div>
+            <hr>
+            <div>
+                <label for="vol">Volume (between 0 and 50):</label>
+                <input type="range" name="vol" id="vol" min="0" max="50" step="2" value="12">
+            </div>
+            <hr>
+            <div>
+                <label for="gsearch">Search Google:</label>
+                <input type="search" name="gsearch" id="gsearch">
+            </div>
+            <hr>
+            <div>
+                <label for="phone">Enter your phone number:</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <hr>
+            <div>
+                <label for="appt">Select a time:</label>
+                <input type="time" name="appt" id="appt">
+            </div>
+            <hr>
+
+            <hr>
+            <div>
+                <input type="submit" value="Send">
+                <input type="reset" value="Empty">
+                <!-- <input type="submit" value="Submit">
+                <input type="reset " value="Reset"> -->
+            </div>
+        </form>
+
+    </fieldset>
+
+</body>
+
+</html>
